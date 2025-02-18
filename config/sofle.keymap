@@ -123,10 +123,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gresc            &kp N1      &kp N2    &kp N3             &kp N4               &kp N5                           &kp N6  &kp N7               &kp N8             &kp N9      &kp N0    &kp PERIOD
-&kp TAB           &kp Q       &kp W     &kp E              &kp R                &kp T                            &kp Y   &kp U                &kp I              &kp O       &kp P     &kp PERIOD
-&kp LEFT_SHIFT    &kp A       &kp S     &hml LEFT_SHIFT D  &hml LEFT_COMMAND F  &kp G                            &kp H   &hmr LEFT_COMMAND J  &hmr LEFT_SHIFT K  &kp L       &kp SEMI  &kp BACKSPACE
-&kp LEFT_COMMAND  &hmlmo 4 Z  &kp X     &kp C              &kp V                &kp B   &kp C_MUTE    &kp EQUAL  &kp N   &kp M                &kp COMMA          &kp DOT     &kp FSLH  &kp PERIOD
+&gresc            &kp N1      &kp N2    &kp N3             &kp N4               &kp N5                           &kp N6  &kp N7               &kp N8             &kp N9      &kp N0         &kp PERIOD
+&kp TAB           &kp Q       &kp W     &hmlmo 3 E         &kp R                &kp T                            &kp Y   &kp U                &kp I              &kp O       &kp P          &kp PERIOD
+&kp LEFT_SHIFT    &kp A       &kp S     &hml LEFT_SHIFT D  &hml LEFT_COMMAND F  &kp G                            &kp H   &hmr LEFT_COMMAND J  &hmr LEFT_SHIFT K  &kp L       &kp SEMI       &kp BACKSPACE
+&kp LEFT_COMMAND  &hmlmo 4 Z  &kp X     &kp C              &kp V                &kp B   &kp C_MUTE    &kp EQUAL  &kp N   &kp M                &kp COMMA          &kp DOT     &kp LS(COMMA)  &kp PERIOD
                               &kp LGUI  &kp LALT           &mo 3                &mo 2   &kp SPACE     &kp ENTER  &mo 1   &kp RCTRL            &kp LALT           &kp PERIOD
             >;
 
@@ -172,7 +172,7 @@
 &trans  &kp INS       &kp PSCRN           &kp K_CMENU    &trans         &trans                      &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
 &trans  &kp LG(LEFT)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LG(RIGHT)  &kp CLCK                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
 &trans  &kp K_UNDO    &kp K_CUT           &kp K_COPY     &kp K_PASTE    &trans    &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
-                      &trans              &trans         &trans         &mo 3    &trans    &trans  &trans     &trans    &trans    &trans
+                      &trans              &trans         &trans         &trans    &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -189,7 +189,7 @@
             display-name = "adjust";
             bindings = <
 &bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &none  &none  &none  &none  &none  &none
-&ext_power EP_TOG  &none         &none         &none         &none         &studio_unlock                  &none  &none  &none  &none  &none  &none
+&ext_power EP_TOG  &none         &kp LA(TAB)   &kp LALT      &kp TAB       &studio_unlock                  &none  &none  &none  &none  &none  &none
 &none              &none         &kp UP        &kp O         &none         &none                           &none  &none  &none  &none  &none  &none
 &none              &kp LEFT      &kp DOWN      &kp RIGHT     &trans        &caps_word      &none    &none  &none  &none  &none  &none  &none  &none
                                  &none         &none         &trans        &trans          &none    &none  &none  &none  &none  &none
