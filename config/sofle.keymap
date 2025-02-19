@@ -133,9 +133,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
+                <&macro_tap>,
                 <&kp CAPS>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
+                <&macro_tap>,
                 <&kp CAPSLOCK>;
 
             label = "CAPS";
