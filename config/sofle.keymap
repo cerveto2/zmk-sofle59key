@@ -104,9 +104,8 @@
 
             #binding-cells = <2>;
             hold-trigger-on-release;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
-            quick-tap-ms = <100>;
         };
 
         for_caps: for_caps {
