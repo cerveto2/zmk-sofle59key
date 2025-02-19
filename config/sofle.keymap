@@ -144,10 +144,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
-                <&kp TAB>,
+                <&macro_press>,
+                <&kp CAPS>,
                 <&macro_pause_for_release>,
-                <&macro_tap>,
+                <&macro_release>,
                 <&kp CAPSLOCK>;
 
             label = "CAPS";
