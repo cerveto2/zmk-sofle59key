@@ -94,6 +94,7 @@
             hold-trigger-on-release;
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
+            quick-tap-ms = <150>;
         };
 
         for_caps: for_caps {
