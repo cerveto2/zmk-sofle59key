@@ -157,7 +157,7 @@
         pswd_iz: pswd_iz {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(I) &kp Z &kp N4 &kp N8 &kp COLON &kp N1 &kp N8 &kp SPACE &kp LS(K) &kp D &kp Y &kp B &kp Y &kp S &kp SPACE &kp T &kp A &kp K &kp SPACE &kp V &kp E &kp N &kp O &kp V &kp A &kp L &kp RET>;
+            bindings = <&kp LS(I) &kp Z &kp LS(N4) &kp LS(N8) &kp LS(DOT) &kp LS(N1) &kp LS(N8) &kp SPACE &kp LS(K) &kp D &kp Y &kp B &kp Y &kp S &kp SPACE &kp T &kp A &kp K &kp SPACE &kp V &kp E &kp N &kp O &kp V &kp A &kp L &kp RET>;
             label = "PSWD_IZ";
             wait-ms = <10>;
             tap-ms = <10>;
@@ -166,7 +166,7 @@
         pswd_las: pswd_las {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N3 &kp L &kp A &kp S &kp I &kp S &kp E &kp S &kp E &kp LS(F) &kp L &kp A &kp K &kp A &kp J &kp AT &kp RET>;
+            bindings = <&kp LS(N3) &kp L &kp A &kp S &kp I &kp S &kp E &kp S &kp E &kp LS(F) &kp L &kp A &kp K &kp A &kp J &kp LA(N2) &kp RET>;
             label = "PSWD_LAS";
             wait-ms = <10>;
             tap-ms = <10>;
@@ -213,7 +213,7 @@
             bindings = <
 &none       &kp F1      &kp F2        &kp F3        &kp F4        &kp F5                        &kp F6          &kp F7        &kp F8        &kp F9         &kp F10         &kp F11
 &caps_word  &kp DOT     &kp LS(LBKT)  &kp LS(BSLH)  &kp BSLH      &kp DOT                       &kp CARET       &kp LS(RBKT)  &kp RBKT      &kp PERIOD     &kp PERIOD      &none
-&trans      &kp N1      &kp LA(N2)    &kp LA(N3)    &kp LA(N4)    &kp LA(N5)                    &kp LS(PERIOD)  &kp LA(LBKT)  &kp LA(RBKT)  &kp LA(COMMA)  &kp LA(PERIOD)  &kp LS(DOT)
+&trans      &kp PERIOD  &kp LA(N2)    &kp LA(N3)    &kp LA(N4)    &kp LA(N5)                    &kp LS(PERIOD)  &kp LA(LBKT)  &kp LA(RBKT)  &kp LA(COMMA)  &kp LA(PERIOD)  &kp LS(DOT)
 &trans      &kp LA(N6)  &kp LA(N7)    &kp LA(N8)    &kp LA(FSLH)  &kp LS(APOS)  &none    &none  &kp UNDERSCORE  &kp LA(N9)    &kp LA(N0)    &none          &none           &none
                         &none         &none         &none         &none         &none    &none  &none           &none         &none         &none
             >;
