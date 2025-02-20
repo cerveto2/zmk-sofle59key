@@ -144,6 +144,27 @@
 
             label = "CAPS";
         };
+
+        pswd_fakt: pswd_fakt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp A &kp K &kp T &kp S &kp I &kp L &kp N &kp E &kp H &kp E &kp S &kp L &kp O &kp DOT &kp ENTER>;
+            label = "PSWD_FAKT";
+        };
+
+        pswd_iz: pswd_iz {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp Z &kp N4 &kp N8 &kp COLON &kp N1 &kp N8 &kp SPACE &kp LS(K) &kp D &kp Y &kp B &kp Y &kp S &kp SPACE &kp T &kp A &kp K &kp SPACE &kp V &kp E &kp N &kp O &kp V &kp A &kp L &kp RET>;
+            label = "PSWD_IZ";
+        };
+
+        pswd_las: pswd_las {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N3 &kp L &kp A &kp S &kp I &kp S &kp E &kp S &kp E &kp LS(F) &kp L &kp A &kp K &kp A &kp J &kp AT &kp RET>;
+            label = "PSWD_LAS";
+        };
     };
 
     keymap {
@@ -162,11 +183,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gresc            &kp GRAVE     &kp N2  &kp N3                 &kp N4                   &kp N5                           &kp N6  &kp N7                   &kp N8                 &kp N9    &kp N0         &kp LS(EQUAL)
-&kp TAB           &kp Q         &kp W   &kp E                  &kp R                    &kp T                            &kp Y   &kp U                    &kp I                  &kp O     &kp P          &kp LBKT
-&kp LSHFT         &kp A         &kp S   &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                            &kp H   &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L     &kp BACKSPACE  &kp SEMICOLON
-&kp LEFT_COMMAND  &mo_kp_l 4 Z  &kp X   &kp C                  &kp V                    &kp B   &kp C_MUTE    &mo 3      &kp N   &kp M                    &kp COMMA              &kp DOT   &kp LS(COMMA)  &kp MINUS
-                                &mo 3   &kp UP_ARROW           &kp LALT                 &mo 2   &kp SPACE     &kp ENTER  &mo 1   &kp LEFT                 &kp RIGHT              &kp FSLH
+&gresc            &kp GRAVE     &kp N2  &kp N3                 &kp N4                   &kp N5                           &kp N6  &kp N7                   &kp N8                 &kp N9     &kp N0         &kp LS(EQUAL)
+&kp TAB           &kp Q         &kp W   &kp E                  &kp R                    &kp T                            &kp Y   &kp U                    &kp I                  &kp O      &kp P          &kp LBKT
+&kp LSHFT         &kp A         &kp S   &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                            &kp H   &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L      &kp BACKSPACE  &kp SEMICOLON
+&kp LEFT_COMMAND  &mo_kp_l 4 Z  &kp X   &kp C                  &kp V                    &kp B   &kp C_MUTE    &mo 3      &kp N   &kp M                    &kp COMMA              &kp DOT    &kp LS(COMMA)  &kp MINUS
+                                &mo 3   &kp UP_ARROW           &kp LALT                 &mo 2   &kp SPACE     &kp ENTER  &mo 1   &kp FSLH                 &kp LEFT               &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -207,11 +228,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans    &trans                  &trans              &trans         &trans             &trans                     &trans     &trans          &trans          &trans     &trans   &trans
-&trans    &kp LS(HOME)            &kp HOME            &kp END        &kp LS(END)        &kp DOT                    &kp PG_UP  &trans          &kp UP          &trans     &kp N0   &trans
-&kp CAPS  &kp LS(LA(LEFT_ARROW))  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LA(LS(RIGHT))  &kp DOT                    &kp PG_DN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp DEL  &kp BSPC
-&kp DOT   &kp DOT                 &kp LS(LEFT)        &kp LS(RIGHT)  &kp DOT            &trans   &trans    &trans  &trans     &trans          &trans          &trans     &trans   &trans
-                                  &trans              &trans         &trans             &trans   &trans    &trans  &trans     &trans          &trans          &trans
+&pswd_fakt  &pswd_iz                &pswd_las           &trans         &trans             &trans                     &trans     &trans          &trans          &trans     &trans   &trans
+&trans      &kp LS(HOME)            &kp HOME            &kp END        &kp LS(END)        &kp DOT                    &kp PG_UP  &trans          &kp UP          &trans     &kp N0   &trans
+&kp CAPS    &kp LS(LA(LEFT_ARROW))  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LA(LS(RIGHT))  &kp DOT                    &kp PG_DN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp DEL  &kp BSPC
+&kp DOT     &kp DOT                 &kp LS(LEFT)        &kp LS(RIGHT)  &kp DOT            &trans   &trans    &trans  &trans     &trans          &trans          &trans     &trans   &trans
+                                    &trans              &trans         &trans             &trans   &trans    &trans  &trans     &trans          &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
