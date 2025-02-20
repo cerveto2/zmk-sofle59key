@@ -138,6 +138,8 @@
             #binding-cells = <0>;
             bindings = <&kp F &kp A &kp K &kp T &kp S &kp I &kp L &kp N &kp E &kp H &kp E &kp S &kp L &kp O &kp DOT &kp ENTER>;
             label = "PSWD_FAKT";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         pswd_iz: pswd_iz {
@@ -145,6 +147,8 @@
             #binding-cells = <0>;
             bindings = <&kp LS(I) &kp Z &kp N4 &kp N8 &kp COLON &kp N1 &kp N8 &kp SPACE &kp LS(K) &kp D &kp Y &kp B &kp Y &kp S &kp SPACE &kp T &kp A &kp K &kp SPACE &kp V &kp E &kp N &kp O &kp V &kp A &kp L &kp RET>;
             label = "PSWD_IZ";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         pswd_las: pswd_las {
@@ -152,6 +156,8 @@
             #binding-cells = <0>;
             bindings = <&kp N3 &kp L &kp A &kp S &kp I &kp S &kp E &kp S &kp E &kp LS(F) &kp L &kp A &kp K &kp A &kp J &kp AT &kp RET>;
             label = "PSWD_LAS";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
     };
 
@@ -175,7 +181,7 @@
 &kp TAB           &kp Q         &kp W   &kp E                  &kp R                    &kp T                            &kp Y   &kp U                    &kp I                  &kp O      &kp P          &kp LBKT
 &kp LSHFT         &kp A         &kp S   &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                            &kp H   &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L      &kp BACKSPACE  &kp SEMICOLON
 &kp LEFT_COMMAND  &mo_kp_l 4 Z  &kp X   &kp C                  &kp V                    &kp B   &kp C_MUTE    &mo 3      &kp N   &kp M                    &kp COMMA              &kp DOT    &kp LS(COMMA)  &kp MINUS
-                                &mo 3   &kp UP_ARROW           &kp LALT                 &mo 2   &kp SPACE     &kp ENTER  &mo 1   &kp FSLH                 &kp LEFT               &kp RIGHT
+                                &mo 3   &mo 3                  &kp LALT                 &mo 2   &kp SPACE     &kp ENTER  &mo 1   &kp FSLH                 &kp LEFT               &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -236,11 +242,11 @@
 
             display-name = "adjust";
             bindings = <
-&bt BT_CLR_ALL          &bt BT_SEL 0       &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4                    &none  &none  &none  &none  &none  &none
-&ext_power EP_TOG       &none              &kp LEFT_SHIFT  &kp UP_ARROW    &kp TAB       &studio_unlock                  &none  &none  &none  &none  &none  &none
-&kp LS(LG(UP_ARROW))    &kp LS(LG(X))      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT     &none                           &none  &none  &none  &none  &none  &none
-&kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT))  &kp LG(M)       &kp PERIOD      &trans        &caps_word      &none    &none  &none  &none  &none  &none  &none  &none
-                                           &none           &none           &trans        &trans          &none    &none  &none  &none  &none  &none
+&bt BT_CLR_ALL     &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4                    &none  &none  &none  &none  &none  &none
+&ext_power EP_TOG  &none           &kp LEFT_SHIFT     &kp UP_ARROW    &kp TAB       &studio_unlock                  &none  &none  &none  &none  &none  &none
+&kp LG(LS(X))      &kp LS(LG(UP))  &kp LEFT           &kp DOWN_ARROW  &kp RIGHT     &none                           &none  &none  &none  &none  &none  &none
+&kp LG(LS(LEFT))   &kp LG(M)       &kp LG(LS(RIGHT))  &kp PERIOD      &trans        &caps_word      &none    &none  &none  &none  &none  &none  &none  &none
+                                   &none              &none           &trans        &trans          &none    &none  &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
