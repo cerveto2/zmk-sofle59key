@@ -150,8 +150,8 @@
             #binding-cells = <0>;
             bindings = <&kp F &kp A &kp K &kp T &kp S &kp I &kp L &kp N &kp E &kp H &kp E &kp S &kp L &kp O &kp DOT &kp ENTER>;
             label = "PSWD_FAKT";
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         pswd_iz: pswd_iz {
@@ -189,11 +189,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gresc            &kp GRAVE     &kp N2  &kp N3                 &kp N4                   &kp N5                           &kp N6  &kp N7                   &kp N8                 &kp N9     &kp N0         &kp LS(EQUAL)
-&kp TAB           &kp Q         &kp W   &kp E                  &kp R                    &kp T                            &kp Y   &kp U                    &kp I                  &kp O      &kp P          &kp LBKT
-&kp LSHFT         &kp A         &kp S   &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                            &kp H   &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L      &kp BACKSPACE  &kp SEMICOLON
-&kp LEFT_COMMAND  &mo_kp_l 4 Z  &kp X   &kp C                  &kp V                    &kp B   &kp C_MUTE    &mo 3      &kp N   &kp M                    &kp COMMA              &kp DOT    &kp LS(COMMA)  &kp MINUS
-                                &mo 3   &mo 3                  &kp LALT                 &mo 2   &kp SPACE     &kp ENTER  &mo 1   &kp FSLH                 &kp LEFT               &kp RIGHT
+&gresc            &kp GRAVE     &kp N2  &kp N3                 &kp N4                   &kp N5                                 &kp N6  &kp N7                   &kp N8                 &kp N9     &kp N0         &kp LS(EQUAL)
+&kp TAB           &kp Q         &kp W   &kp E                  &kp R                    &kp T                                  &kp Y   &kp U                    &kp I                  &kp O      &kp P          &kp LBKT
+&kp LSHFT         &kp A         &kp S   &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                                  &kp H   &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L      &kp BACKSPACE  &kp SEMICOLON
+&kp LEFT_COMMAND  &mo_kp_l 4 Z  &kp X   &kp C                  &kp V                    &kp B   &kp C_MUTE          &mo 3      &kp N   &kp M                    &kp COMMA              &kp DOT    &kp LS(COMMA)  &kp MINUS
+                                &mo 3   &mo 3                  &kp LALT                 &mo 2   &mo_kp_l 3 SPACE    &kp ENTER  &mo 1   &kp FSLH                 &kp LEFT               &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
