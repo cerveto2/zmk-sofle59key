@@ -202,7 +202,7 @@
         l_t: l_t {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp LS(EQUAL)>;
+            bindings = <&kp LS(EQUAL) &kp T>;
             label = "L_T";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -211,7 +211,7 @@
         l_o: l_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT &kp O>;
+            bindings = <&kp EQUAL &kp O>;
             label = "L_O";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -220,7 +220,7 @@
         l_s: l_s {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CLCK &kp N3 &kp CAPS>;
+            bindings = <&kp CLCK &kp N3 &kp C &kp CAPS>;
             label = "L_S";
             wait-ms = <1>;
             tap-ms = <1>;
