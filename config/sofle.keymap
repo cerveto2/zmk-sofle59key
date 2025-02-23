@@ -208,7 +208,7 @@
         l_s: l_s {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CLCK &kp N3 &kp C &kp CAPS>;
+            bindings = <&kp CLCK &kp N3 &kp C>;
             label = "L_S";
             wait-ms = <1>;
             tap-ms = <1>;
