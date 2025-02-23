@@ -123,8 +123,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <400>;
-            quick-tap-ms = <300>;
             hold-trigger-on-release;
+            flavor = "tap-preferred";
         };
 
         for_o: for_o {
@@ -134,8 +134,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <400>;
-            quick-tap-ms = <300>;
             hold-trigger-on-release;
+            flavor = "tap-preferred";
         };
     };
 
