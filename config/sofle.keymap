@@ -98,6 +98,17 @@
             hold-trigger-on-release;
             flavor = "tap-preferred";
         };
+
+        for_n: for_n {
+            compatible = "zmk,behavior-hold-tap";
+            label = "FOR_N";
+            bindings = <&hacek>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            hold-trigger-on-release;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -142,6 +153,8 @@
             #binding-cells = <1>;
             bindings = <&kp LS(EQUAL) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "CAPS_LETTER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
@@ -161,11 +174,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gresc            &kp GRAVE     &hacek E  &hacek S               &hacek C                 &hacek R                                   &hacek Z  &kp N7                   &kp N8                 &kp N9      &kp N0         &kp LS(EQUAL)
-&kp TAB           &kp Q         &kp W     &kp E                  &kp R                    &for_t T T                                 &kp Y     &kp U                    &kp I                  &for_o 0 O  &kp P          &kp LBKT
-&kp LSHFT         &kp A         &kp S     &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                                      &kp H     &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L       &kp BACKSPACE  &kp SEMICOLON
-&kp LEFT_COMMAND  &mo_kp_l 4 Z  &kp X     &kp C                  &kp V                    &kp B       &kp C_MUTE          &kp GRAVE  &kp N     &kp M                    &kp COMMA              &kp DOT     &kp LS(COMMA)  &kp MINUS
-                                &mo 3     &mo 3                  &kp LALT                 &mo 2       &mo_kp_l 3 SPACE    &kp ENTER  &mo 1     &kp FSLH                 &kp LEFT               &kp RIGHT
+&gresc            &kp BSLH      &hacek E  &hacek S               &hacek C                 &hacek R                                   &hacek Z    &kp N7                   &kp N8                 &kp N9      &kp N0         &kp LS(EQUAL)
+&kp TAB           &kp Q         &kp W     &kp E                  &kp R                    &for_t T T                                 &kp Y       &kp U                    &kp I                  &for_o 0 O  &kp P          &kp LBKT
+&kp LSHFT         &kp A         &kp S     &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                                      &kp H       &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L       &kp BACKSPACE  &kp SEMICOLON
+&kp LEFT_COMMAND  &mo_kp_l 4 Z  &kp X     &kp C                  &kp V                    &kp B       &kp C_MUTE          &kp GRAVE  &for_n N N  &kp M                    &kp COMMA              &kp DOT     &kp LS(COMMA)  &kp MINUS
+                                &mo 3     &mo 3                  &kp LALT                 &mo 2       &mo_kp_l 3 SPACE    &kp ENTER  &mo 1       &kp FSLH                 &kp LEFT               &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -183,11 +196,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp F1      &kp F2      &kp F3        &kp F4        &kp F5        &kp F6                        &kp F7          &kp F8        &kp F9        &kp F10        &kp F11         &kp F12
-&caps_word  &kp DOT     &kp LS(LBKT)  &kp LS(BSLH)  &kp BSLH      &kp DOT                       &kp CARET       &kp LS(RBKT)  &kp RBKT      &kp PERIOD     &kp PERIOD      &none
-&trans      &kp PERIOD  &kp LA(N2)    &kp LA(N3)    &kp LA(N4)    &kp LA(N5)                    &kp LS(PERIOD)  &kp LA(LBKT)  &kp LA(RBKT)  &kp LA(COMMA)  &kp LA(PERIOD)  &kp LS(DOT)
-&trans      &kp LA(N6)  &kp LA(N7)    &kp LA(N8)    &kp LA(FSLH)  &kp LS(APOS)  &none    &none  &kp UNDERSCORE  &kp LA(N9)    &kp LA(N0)    &none          &none           &none
-                        &none         &none         &none         &none         &none    &none  &none           &none         &none         &none
+&kp F1      &kp F2      &kp F3        &kp F4         &kp F5        &kp F6                        &kp F7          &kp F8        &kp F9        &kp F10        &kp F11         &kp F12
+&caps_word  &kp DOT     &kp LS(LBKT)  &kp LS(GRAVE)  &kp GRAVE     &kp DOT                       &kp CARET       &kp LS(RBKT)  &kp RBKT      &kp PERIOD     &kp PERIOD      &none
+&trans      &kp PERIOD  &kp LA(N2)    &kp LA(N3)     &kp LA(N4)    &kp LA(N5)                    &kp LS(PERIOD)  &kp LA(LBKT)  &kp LA(RBKT)  &kp LA(COMMA)  &kp LA(PERIOD)  &kp LS(DOT)
+&trans      &kp LA(N6)  &kp LA(N7)    &kp LA(N8)     &kp LA(FSLH)  &kp LS(APOS)  &none    &none  &kp UNDERSCORE  &kp LA(N9)    &kp LA(N0)    &none          &none           &none
+                        &none         &none          &none         &none         &none    &none  &none           &none         &none         &none
             >;
 
             sensor-bindings =
