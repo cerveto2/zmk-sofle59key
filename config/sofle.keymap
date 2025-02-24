@@ -82,7 +82,7 @@
         for_t: for_t {
             compatible = "zmk,behavior-hold-tap";
             label = "FOR_T";
-            bindings = <&l_t>, <&kp>;
+            bindings = <&hacek>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <400>;
@@ -164,7 +164,7 @@
 
             bindings = <
 &gresc            &kp GRAVE     &hacek E  &hacek S               &hacek C                 &hacek R                                   &hacek Z  &kp N7                   &kp N8                 &kp N9      &kp N0         &kp LS(EQUAL)
-&kp TAB           &kp Q         &kp W     &kp E                  &kp R                    &for_t 0 T                                 &kp Y     &kp U                    &kp I                  &for_o 0 O  &kp P          &kp LBKT
+&kp TAB           &kp Q         &kp W     &kp E                  &kp R                    &for_t T T                                 &kp Y     &kp U                    &kp I                  &for_o 0 O  &kp P          &kp LBKT
 &kp LSHFT         &kp A         &kp S     &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                                      &kp H     &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L       &kp BACKSPACE  &kp SEMICOLON
 &kp LEFT_COMMAND  &mo_kp_l 4 Z  &kp X     &kp C                  &kp V                    &kp B       &kp C_MUTE          &mo 3      &kp N     &kp M                    &kp COMMA              &kp DOT     &kp LS(COMMA)  &kp MINUS
                                 &mo 3     &mo 3                  &kp LALT                 &mo 2       &mo_kp_l 3 SPACE    &kp ENTER  &mo 1     &kp FSLH                 &kp LEFT               &kp RIGHT
