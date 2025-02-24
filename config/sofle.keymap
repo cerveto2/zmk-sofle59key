@@ -25,21 +25,9 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <32 31>;
         };
-
-        s {
-            bindings = <&l_s>;
-            key-positions = <32 3>;
-        };
     };
 
     behaviors {
-        caps: caps {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPS";
-            #binding-cells = <0>;
-            continue-list = <POUND MINUS BACKSPACE UNDERSCORE>;
-        };
-
         kp_kp_r: kp_kp_r {
             compatible = "zmk,behavior-hold-tap";
             label = "KP_KP_R";
