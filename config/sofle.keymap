@@ -131,15 +131,6 @@
             tap-ms = <10>;
         };
 
-        l_t: l_t {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(EQUAL) &kp T>;
-            label = "L_T";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
         l_o: l_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -149,43 +140,7 @@
             tap-ms = <1>;
         };
 
-        l_e: l_e {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(EQUAL) &kp E>;
-            label = "L_E";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        l_s: l_s {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(EQUAL) &kp S>;
-            label = "L_S";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        l_c: l_c {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(EQUAL) &kp C>;
-            label = "L_C";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        l_r: l_r {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(EQUAL) &kp R>;
-            label = "L_R";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        caps_letter: caps_letter {
+        hacek: caps_letter {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&kp LS(EQUAL) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
@@ -209,11 +164,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gresc            &kp GRAVE     &l_e   &l_s                   &l_c                     &l_r                                       &caps_letter Z  &kp N7                   &kp N8                 &kp N9      &kp N0         &kp LS(EQUAL)
-&kp TAB           &kp Q         &kp W  &kp E                  &kp R                    &for_t 0 T                                 &kp Y           &kp U                    &kp I                  &for_o 0 O  &kp P          &kp LBKT
-&kp LSHFT         &kp A         &kp S  &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                                      &kp H           &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L       &kp BACKSPACE  &kp SEMICOLON
-&kp LEFT_COMMAND  &mo_kp_l 4 Z  &kp X  &kp C                  &kp V                    &kp B       &kp C_MUTE          &mo 3      &kp N           &kp M                    &kp COMMA              &kp DOT     &kp LS(COMMA)  &kp MINUS
-                                &mo 3  &mo 3                  &kp LALT                 &mo 2       &mo_kp_l 3 SPACE    &kp ENTER  &mo 1           &kp FSLH                 &kp LEFT               &kp RIGHT
+&gresc            &kp GRAVE     &hacek E  &hacek S               &hacek C                 &hacek R                                   &hacek Z  &kp N7                   &kp N8                 &kp N9      &kp N0         &kp LS(EQUAL)
+&kp TAB           &kp Q         &kp W     &kp E                  &kp R                    &for_t 0 T                                 &kp Y     &kp U                    &kp I                  &for_o 0 O  &kp P          &kp LBKT
+&kp LSHFT         &kp A         &kp S     &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                                      &kp H     &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L       &kp BACKSPACE  &kp SEMICOLON
+&kp LEFT_COMMAND  &mo_kp_l 4 Z  &kp X     &kp C                  &kp V                    &kp B       &kp C_MUTE          &mo 3      &kp N     &kp M                    &kp COMMA              &kp DOT     &kp LS(COMMA)  &kp MINUS
+                                &mo 3     &mo 3                  &kp LALT                 &mo 2       &mo_kp_l 3 SPACE    &kp ENTER  &mo 1     &kp FSLH                 &kp LEFT               &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
