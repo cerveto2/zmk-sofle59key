@@ -196,7 +196,7 @@
         del_last_word: del_last_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LEFT_ARROW) &kp BACKSPACE>;
+            bindings = <&kp LA(LS(LEFT_ARROW)) &kp BACKSPACE>;
             label = "DEL_LAST_WORD";
         };
     };
