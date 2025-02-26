@@ -196,7 +196,7 @@
         del_last_word: del_last_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT &kp BACKSPACE>;
+            bindings = <&kp LA(LEFT_ARROW) &kp BACKSPACE>;
             label = "DEL_LAST_WORD";
         };
     };
@@ -218,7 +218,7 @@
 
             bindings = <
 &gresc            &kp BSLH      &hacek E  &hacek S               &hacek C                 &hacek R                                          &hacek Z    &kp N7                   &kp N8                 &kp N9      &kp N0         &kp LS(EQUAL)
-&kp TAB           &kp Q         &kp W     &kp E                  &kp R                    &for_t T T                                        &kp Y       &kp U                    &kp I                  &for_o 0 O  &kp P          &kp LBKT
+&mt CAPS TAB      &kp Q         &kp W     &kp E                  &kp R                    &for_t T T                                        &kp Y       &kp U                    &kp I                  &for_o 0 O  &kp P          &kp LBKT
 &kp LSHFT         &kp A         &kp S     &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                                             &kp H       &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L       &kp BACKSPACE  &kp SEMICOLON
 &kp LEFT_COMMAND  &mo_kp_l 4 Z  &kp X     &kp C                  &kp V                    &kp B       &kp C_MUTE          &kp GRAVE         &for_n N N  &kp M                    &kp COMMA              &kp DOT     &kp LS(COMMA)  &kp MINUS
                                 &mo 3     &kp LALT               &mo 3                    &mo 2       &mo_kp_l 5 SPACE    &mo_kp_l 2 ENTER  &mo 1       &kp FSLH                 &kp LEFT               &kp RIGHT
@@ -254,11 +254,11 @@
         sipky {
             display-name = "adjust";
             bindings = <
-&kp DOT    &kp DOT         &kp DOT    &kp DOT    &kp DOT         &kp DOT                             &none  &none  &none           &none  &none  &none
-&kp DOT    &kp DOT         &kp END    &kp UP     &kp HOME        &kp DOT                             &none  &none  &none           &none  &none  &none
-&kp SPACE  &kp LEFT_SHIFT  &kp LEFT   &kp DOWN   &kp RIGHT       &kp SPACE                           &none  &none  &kp LEFT_SHIFT  &none  &none  &none
-&kp SPACE  &kp SPACE       &kp SPACE  &kp SPACE  &del_last_word  &kp SPACE  &kp SPACE         &none  &none  &none  &none           &none  &none  &none
-                           &none      &none      &trans          &trans     &kp LEFT_SHIFT    &none  &none  &none  &none           &none
+&kp DOT    &kp DOT         &kp DOT    &kp DOT       &kp DOT        &kp DOT                                      &none  &none  &none           &none  &none           &none
+&kp DOT    &kp DOT         &kp HOME   &kp UP        &kp END        &kp DOT                                      &none  &none  &none           &none  &none           &none
+&kp SPACE  &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT      &del_last_word                               &none  &none  &kp LEFT_SHIFT  &none  &del_last_word  &none
+&kp SPACE  &kp SPACE       &kp SPACE  &kp LA(LEFT)  &kp LA(RIGHT)  &kp SPACE       &kp SPACE    &none           &none  &none  &none           &none  &none           &none
+                           &none      &none         &trans         &trans          &none        &kp LEFT_SHIFT  &none  &none  &none           &none
             >;
 
             sensor-bindings =
