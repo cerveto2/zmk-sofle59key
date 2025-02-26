@@ -205,11 +205,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gresc            &kp BSLH      &hacek E  &hacek S               &hacek C                 &hacek R                                   &hacek Z    &kp N7                   &kp N8                 &kp N9      &kp N0         &kp LS(EQUAL)
-&kp TAB           &kp Q         &kp W     &kp E                  &kp R                    &for_t T T                                 &kp Y       &kp U                    &kp I                  &for_o 0 O  &kp P          &kp LBKT
-&kp LSHFT         &kp A         &kp S     &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                                      &kp H       &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L       &kp BACKSPACE  &kp SEMICOLON
-&kp LEFT_COMMAND  &mo_kp_l 4 Z  &kp X     &kp C                  &kp V                    &kp B       &kp C_MUTE          &kp GRAVE  &for_n N N  &kp M                    &kp COMMA              &kp DOT     &kp LS(COMMA)  &kp MINUS
-                                &mo 3     &kp LALT               &mo 3                    &mo 5       &mo_kp_l 3 SPACE    &kp ENTER  &mo 1       &kp FSLH                 &kp LEFT               &kp RIGHT
+&gresc            &kp BSLH      &hacek E  &hacek S               &hacek C                 &hacek R                                          &hacek Z    &kp N7                   &kp N8                 &kp N9      &kp N0         &kp LS(EQUAL)
+&kp TAB           &kp Q         &kp W     &kp E                  &kp R                    &for_t T T                                        &kp Y       &kp U                    &kp I                  &for_o 0 O  &kp P          &kp LBKT
+&kp LSHFT         &kp A         &kp S     &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                                             &kp H       &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L       &kp BACKSPACE  &kp SEMICOLON
+&kp LEFT_COMMAND  &mo_kp_l 4 Z  &kp X     &kp C                  &kp V                    &kp B       &kp C_MUTE          &kp GRAVE         &for_n N N  &kp M                    &kp COMMA              &kp DOT     &kp LS(COMMA)  &kp MINUS
+                                &mo 3     &kp LALT               &mo 3                    &mo 2       &mo_kp_l 5 SPACE    &mo_kp_l 2 ENTER  &mo 1       &kp FSLH                 &kp LEFT               &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -239,28 +239,22 @@
                 <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
-        posuvy {
-            display-name = "raise";
-
-            // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-            // |       | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |       |
-            // |       | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-            // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
-            //                |      |       |       |      |      |  |      |      |      |       |      |
-
+        sipky {
+            display-name = "adjust";
             bindings = <
-&pswd_fakt  &pswd_iz                &pswd_las           &trans         &trans             &trans                               &trans     &trans          &trans          &trans     &trans   &trans
-&trans      &kp LS(HOME)            &kp HOME            &kp END        &kp LS(END)        &kp DOT                              &kp PG_UP  &trans          &kp UP          &trans     &kp N0   &trans
-&kp CAPS    &kp LS(LA(LEFT_ARROW))  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LA(LS(RIGHT))  &kp LA(BACKSPACE)                    &kp PG_DN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp DEL  &kp BSPC
-&kp LG(LT)  &kp LG(GRAVE)           &kp LS(LEFT)        &kp LS(RIGHT)  &kp DOT            &trans             &trans    &trans  &trans     &trans          &trans          &trans     &trans   &trans
-                                    &trans              &trans         &trans             &trans             &trans    &trans  &trans     &trans          &trans          &trans
+&kp DOT    &kp DOT         &kp DOT    &kp DOT    &kp DOT         &kp DOT                             &none  &none  &none           &none  &none  &none
+&kp DOT    &kp DOT         &kp END    &kp UP     &kp HOME        &kp DOT                             &none  &none  &none           &none  &none  &none
+&kp SPACE  &kp LEFT_SHIFT  &kp LEFT   &kp DOWN   &kp RIGHT       &kp SPACE                           &none  &none  &kp LEFT_SHIFT  &none  &none  &none
+&kp SPACE  &kp SPACE       &kp SPACE  &kp SPACE  &del_last_word  &kp SPACE  &kp SPACE         &none  &none  &none  &none           &none  &none  &none
+                           &none      &none      &trans          &trans     &kp LEFT_SHIFT    &none  &none  &none  &none           &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
-        arrows_a_okna {
+        okna {
             // ----------------------------------------------------------------------------------------------------------------------------
             // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
             // | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
@@ -290,19 +284,14 @@
             >;
         };
 
-        sipky {
-            display-name = "adjust";
+        prazdne {
             bindings = <
-&kp DOT    &kp DOT         &kp DOT    &kp DOT    &kp DOT         &kp DOT                        &none  &none  &none           &none  &none  &none
-&kp DOT    &kp DOT         &kp END    &kp UP     &kp HOME        &kp DOT                        &none  &none  &none           &none  &none  &none
-&kp SPACE  &kp LEFT_SHIFT  &kp LEFT   &kp DOWN   &kp RIGHT       &kp SPACE                      &none  &none  &kp LEFT_SHIFT  &none  &none  &none
-&kp SPACE  &kp SPACE       &kp SPACE  &kp SPACE  &del_last_word  &kp SPACE  &kp SPACE    &none  &none  &none  &none           &none  &none  &none
-                           &none      &none      &trans          &trans     &none        &none  &none  &none  &none           &none
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
