@@ -242,11 +242,11 @@
         sipky {
             display-name = "adjust";
             bindings = <
-&kp DOT    &kp DOT         &kp DOT    &kp DOT       &kp DOT        &kp DOT                                      &none  &none  &none           &none  &none           &none
-&kp DOT    &kp DOT         &kp HOME   &kp UP        &kp END        &kp DOT                                      &none  &none  &none           &none  &none           &none
-&kp SPACE  &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT      &del_last_word                               &none  &none  &kp LEFT_SHIFT  &none  &del_last_word  &none
-&kp SPACE  &kp SPACE       &kp SPACE  &kp LA(LEFT)  &kp LA(RIGHT)  &kp SPACE       &kp SPACE    &none           &none  &none  &none           &none  &none           &none
-                           &none      &none         &trans         &trans          &none        &kp LEFT_SHIFT  &none  &none  &none           &none
+&pswd_fakt  &pswd_iz        &pswd_las  &kp DOT       &kp DOT        &kp DOT                                      &none  &none  &none           &none  &none           &none
+&kp DOT     &kp DOT         &kp HOME   &kp UP        &kp END        &kp DOT                                      &none  &none  &none           &none  &none           &none
+&kp SPACE   &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT      &del_last_word                               &none  &none  &kp LEFT_SHIFT  &none  &del_last_word  &none
+&kp SPACE   &kp SPACE       &kp SPACE  &kp LA(LEFT)  &kp LA(RIGHT)  &kp SPACE       &kp SPACE    &none           &none  &none  &none           &none  &none           &none
+                            &none      &none         &trans         &trans          &none        &kp LEFT_SHIFT  &none  &none  &none           &none
             >;
 
             sensor-bindings =
