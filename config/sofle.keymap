@@ -230,7 +230,7 @@
 &kp F1      &kp F2        &kp F3        &kp F4         &kp F5        &kp F6                                     &kp F7          &kp F8         &kp F9       &kp F10       &kp F11       &kp F12
 &caps_word  &kp DOT       &kp LS(LBKT)  &kp LS(GRAVE)  &kp GRAVE     &kp LG(LESS_THAN)                          &kp CARET       &kp LA(COMMA)  &kp LA(DOT)  &kp PERIOD    &kp PERIOD    &none
 &trans      &kp LA(APOS)  &kp LA(N2)    &kp LA(N3)     &kp LA(N4)    &kp FSLH                                   &kp LS(PERIOD)  &kp LS(RBKT)   &kp RBKT     &kp LA(LBKT)  &kp LA(RBKT)  &kp LA(SEMI)
-&trans      &kp LA(N6)    &kp LA(N7)    &kp LA(N8)     &kp LA(FSLH)  &kp LS(APOS)       &none    &kp LS(GRAVE)  &kp UNDERSCORE  &kp LA(N9)     &kp LA(N0)   &none         &kp DEL       &none
+&kp ENTER   &kp LA(N6)    &kp LA(N7)    &kp LA(N8)     &kp LA(FSLH)  &kp LS(APOS)       &none    &kp LS(GRAVE)  &kp UNDERSCORE  &kp LA(N9)     &kp LA(N0)   &none         &kp DEL       &none
                           &none         &none          &none         &none              &none    &none          &none           &none          &none        &none
             >;
 
@@ -242,11 +242,11 @@
         sipky {
             display-name = "adjust";
             bindings = <
-&pswd_fakt  &pswd_iz        &pswd_las  &kp DOT       &kp DOT        &kp DOT                                      &none  &none  &none           &none  &none           &none
-&kp DOT     &kp DOT         &kp HOME   &kp UP        &kp END        &kp DOT                                      &none  &none  &none           &none  &none           &none
-&kp SPACE   &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT      &del_last_word                               &none  &none  &kp LEFT_SHIFT  &none  &del_last_word  &none
-&kp LG(C)   &kp LG(V)       &kp SPACE  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(V)       &kp SPACE    &none           &none  &none  &none           &none  &none           &none
-                            &none      &none         &trans         &trans          &none        &kp LEFT_SHIFT  &none  &none  &none           &none
+&pswd_fakt  &pswd_iz   &pswd_las     &kp DOT       &kp DOT        &kp DOT                                      &none  &none             &none         &none              &none           &none
+&kp DOT     &kp DOT    &kp HOME      &kp UP        &kp END        &kp DOT                                      &none  &kp LS(HOME)      &kp LS(UP)    &kp LS(END)        &none           &none
+&kp LG(C)   &kp LG(V)  &kp LEFT      &kp DOWN      &kp RIGHT      &del_last_word                               &none  &kp LS(LEFT)      &kp LS(DOWN)  &kp LS(RIGHT)      &del_last_word  &none
+&kp ENTER   &trans     &kp LA(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(V)       &kp SPACE    &none           &none  &kp LS(LA(LEFT))  &none         &kp LA(LS(RIGHT))  &none           &none
+                       &none         &none         &trans         &trans          &none        &kp LEFT_SHIFT  &none  &none             &none         &none
             >;
 
             sensor-bindings =
