@@ -242,11 +242,11 @@
         sipky {
             display-name = "adjust";
             bindings = <
-&pswd_fakt  &pswd_iz   &pswd_las     &kp DOT       &kp DOT        &kp DOT                                      &none  &none             &none         &none              &none           &none
-&kp DOT     &kp DOT    &kp HOME      &kp UP        &kp END        &kp DOT                                      &none  &kp LS(HOME)      &kp LS(UP)    &kp LS(END)        &none           &none
-&kp LG(C)   &kp LG(V)  &kp LEFT      &kp DOWN      &kp RIGHT      &del_last_word                               &none  &kp LS(LEFT)      &kp LS(DOWN)  &kp LS(RIGHT)      &del_last_word  &none
-&kp ENTER   &trans     &kp LA(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(V)       &kp SPACE    &none           &none  &kp LS(LA(LEFT))  &none         &kp LA(LS(RIGHT))  &none           &none
-                       &none         &none         &trans         &trans          &none        &kp LEFT_SHIFT  &none  &none             &none         &none
+&pswd_fakt     &pswd_iz           &pswd_las     &kp DOT       &kp DOT        &kp DOT                                      &none  &none             &none         &none              &none           &none
+&kp LESS_THAN  &kp LG(LESS_THAN)  &kp HOME      &kp UP        &kp END        &kp DOT                                      &none  &kp LS(HOME)      &kp LS(UP)    &kp LS(END)        &none           &none
+&kp LG(C)      &kp LG(V)          &kp LEFT      &kp DOWN      &kp RIGHT      &del_last_word                               &none  &kp LS(LEFT)      &kp LS(DOWN)  &kp LS(RIGHT)      &del_last_word  &none
+&kp ENTER      &trans             &kp LA(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(V)       &kp SPACE    &none           &none  &kp LS(LA(LEFT))  &none         &kp LA(LS(RIGHT))  &none           &none
+                                  &none         &none         &trans         &trans          &none        &kp LEFT_SHIFT  &none  &none             &none         &none
             >;
 
             sensor-bindings =
