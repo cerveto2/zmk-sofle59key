@@ -70,7 +70,7 @@
 
         delete {
             bindings = <&kp DEL>;
-            key-positions = <24 34>;
+            key-positions = <34 33>;
         };
     };
 
@@ -317,11 +317,11 @@
 
         prazdne {
             bindings = <
-&trans  &trans    &trans    &trans    &trans    &trans                      &trans    &trans     &trans     &trans     &trans     &trans
-&trans  &trans    &kp N0    &hacek E  &hacek R  &hacek T                    &kp N7    &none      &trans     &kp N9     &trans     &trans
-&trans  &kp N8    &hacek S  &hacek D  &trans    &trans                      &trans    &kp BSLH   &kp SEMI   &kp APOS   &kp COMMA  &kp DOT
-&trans  &hacek Z  &trans    &hacek C  &trans    &trans    &trans    &trans  &hacek N  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT
-                  &trans    &trans    &trans    &trans    &trans    &trans  &trans    &trans     &trans     &trans
+&trans  &trans    &trans    &trans    &trans    &trans                                                &trans    &trans     &trans     &trans     &trans     &trans
+&trans  &trans    &kp N0    &hacek E  &hacek R  &hacek T                                              &kp N7    &none      &trans     &kp N9     &trans     &trans
+&trans  &kp N8    &hacek S  &hacek D  &trans    &trans                                                &trans    &kp BSLH   &kp SEMI   &kp APOS   &kp COMMA  &kp DOT
+&trans  &hacek Z  &trans    &hacek C  &trans    &trans                &trans                  &trans  &hacek N  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT
+                  &trans    &trans    &trans    &kp LA(LS(NUMBER_2))  &kp LS(LA(NUMBER_1))    &trans  &trans    &trans     &trans     &trans
             >;
         };
     };
