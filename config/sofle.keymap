@@ -134,14 +134,22 @@
             flavor = "tap-preferred";
         };
 
-        alt_Z_NUM: alt_Z_NUM {
+        alt_ZandNUMLOCK: alt_ZandNUMLOCK {
             compatible = "zmk,behavior-mod-morph";
-            label = "ALT_Z_NUM";
+            label = "ALT_ZANDNUMLOCK";
             bindings = <&mo_kp_l 4 Z>, <&kp LG(M)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
-            keep-mods = <(MOD_LALT)>;
+        };
+
+        alt_CMD: alt_CMD {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_CMD";
+            bindings = <&kp LEFT_COMMAND>, <&kp LG(LS(LEFT))>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
         };
     };
 
@@ -224,11 +232,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gresc            &kp BSLH    &hacek E     &hacek S               &hacek C                 &hacek R                             &hacek Z    &kp N7                   &kp N8                 &kp N9       &kp N0         &kp LS(EQUAL)
-&mt CAPS TAB      &kp Q       &kp W        &kp E                  &kp R                    &for_t T T                           &kp Y       &kp U                    &kp I                  &for_o 0 O   &kp P          &kp LBKT
-&kp LSHFT         &kp A       &kp S        &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                                &kp H       &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L        &kp BACKSPACE  &kp SEMI
-&kp LEFT_COMMAND  &alt_Z_NUM  &kp X        &kp C                  &kp V                    &kp B       &kp C_MUTE    &kp GRAVE  &for_n N N  &kp M                    &kp COMMA              &kp DOT      &kp LS(COMMA)  &kp MINUS
-                              &kp LA(TAB)  &kp LALT               &mo 3                    &mo 2       &kp SPACE     &kp ENTER  &mo 1       &mo 5                    &kp LS(SPACE)          &kp LA(TAB)
+&gresc        &kp BSLH          &hacek E     &hacek S               &hacek C                 &hacek R                             &hacek Z    &kp N7                   &kp N8                 &kp N9       &kp N0         &kp LS(EQUAL)
+&mt CAPS TAB  &kp Q             &kp W        &kp E                  &kp R                    &for_t T T                           &kp Y       &kp U                    &kp I                  &for_o 0 O   &kp P          &kp LBKT
+&kp LSHFT     &kp A             &kp S        &kp_kp_l LEFT_SHIFT D  &kp_kp_l LEFT_COMMAND F  &kp G                                &kp H       &kp_kp_r LEFT_COMMAND J  &kp_kp_r LEFT_SHIFT K  &kp L        &kp BACKSPACE  &kp SEMI
+&alt_CMD      &alt_ZandNUMLOCK  &kp X        &kp C                  &kp V                    &kp B       &kp C_MUTE    &kp GRAVE  &for_n N N  &kp M                    &kp COMMA              &kp DOT      &kp LS(COMMA)  &kp MINUS
+                                &kp LA(TAB)  &kp LALT               &mo 3                    &mo 2       &kp SPACE     &kp ENTER  &mo 1       &mo 5                    &kp LS(SPACE)          &kp LA(TAB)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -249,7 +257,7 @@
 &kp F1      &kp F2        &kp F3        &kp F4         &kp F5        &kp F6                                     &kp F7          &kp F8         &kp F9       &kp F10       &kp F11       &kp F12
 &caps_word  &kp DOT       &kp LS(LBKT)  &kp LS(GRAVE)  &kp GRAVE     &kp LG(LESS_THAN)                          &kp GRAVE       &kp LA(COMMA)  &kp LA(DOT)  &kp PERIOD    &kp PERIOD    &none
 &kp CAPS    &kp LA(APOS)  &kp LA(N2)    &kp LA(N3)     &kp LA(N4)    &kp FSLH                                   &kp LS(PERIOD)  &kp LS(RBKT)   &kp RBKT     &kp LA(LBKT)  &kp LA(RBKT)  &kp LA(SEMI)
-&kp ENTER   &kp LA(N6)    &kp LA(N7)    &kp LA(N8)     &kp LA(FSLH)  &kp LS(APOS)       &none    &kp LS(GRAVE)  &kp UNDERSCORE  &kp LA(N9)     &kp LA(N0)   &none         &kp DEL       &none
+&kp ENTER   &kp LA(N6)    &kp LA(N7)    &kp LA(N8)     &kp LA(FSLH)  &kp LS(APOS)       &none    &kp LS(GRAVE)  &kp LS(FSLH)    &kp LA(N9)     &kp LA(N0)   &none         &kp DEL       &none
                           &none         &none          &none         &none              &none    &none          &none           &none          &none        &none
             >;
 
@@ -286,7 +294,7 @@
 &bt BT_CLR_ALL    &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR                  &none  &none  &none  &none  &none  &none
 &kp SPACE         &kp SPACE       &kp SPACE          &kp SPACE     &kp SPACE     &kp SPACE                   &none  &none  &none  &none  &none  &none
 &kp LG(LS(X))     &kp LS(LG(UP))  &kp SPACE          &kp SPACE     &kp SPACE     &kp SPACE                   &none  &none  &none  &none  &none  &none
-&kp LG(LS(LEFT))  &alt_Z_NUM      &kp LG(LS(RIGHT))  &kp SPACE     &kp SPACE     &kp SPACE   &none    &none  &none  &none  &none  &none  &none  &none
+&kp LG(LS(LEFT))  &kp LG(M)       &kp LG(LS(RIGHT))  &kp SPACE     &kp SPACE     &kp SPACE   &none    &none  &none  &none  &none  &none  &none  &none
                                   &none              &none         &trans        &trans      &none    &none  &none  &none  &none  &none
             >;
 
