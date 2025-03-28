@@ -48,29 +48,14 @@
             key-positions = <28 29>;
         };
 
-        up {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <54 15>;
-        };
-
-        dowm {
-            bindings = <&kp DOWN_ARROW>;
-            key-positions = <54 27>;
-        };
-
-        left {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <54 26>;
-        };
-
-        right {
-            bindings = <&kp RIGHT>;
-            key-positions = <54 28>;
-        };
-
         delete {
             bindings = <&kp DEL>;
             key-positions = <34 33>;
+        };
+
+        delete2 {
+            bindings = <&kp DEL>;
+            key-positions = <45 46>;
         };
     };
 
