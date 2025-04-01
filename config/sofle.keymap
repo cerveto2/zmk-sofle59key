@@ -163,6 +163,46 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
         };
+
+        hacek_e: hacek_e {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HACEK_E";
+            bindings = <&kp NUMBER_2>, <&hacek E>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        hacek_s: hacek_s {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HACEK_S";
+            bindings = <&kp NUMBER_3>, <&hacek S>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        hacek_r: hacek_r {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HACEK_R";
+            bindings = <&kp NUMBER_4>, <&hacek R>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        hacek_c: hacek_c {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HACEK_C";
+            bindings = <&kp NUMBER_4>, <&hacek C>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -244,7 +284,7 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gresc        &kp BSLH          &hacek E     &hacek S               &hacek C  &hacek R                             &hacek Z    &kp N7   &kp N8                 &kp N9       &kp N0         &kp LS(EQUAL)
+&gresc        &kp BSLH          &hacek_e     &hacek_s               &hacek_c  &hacek_r                             &hacek Z    &kp N7   &kp N8                 &kp N9       &kp N0         &kp LS(EQUAL)
 &mt CAPS TAB  &kp Q             &kp W        &kp E                  &kp R     &for_t T T                           &kp Y       &kp U    &kp I                  &for_o 0 O   &kp P          &kp LBKT
 &kp LSHFT     &alt_A            &kp S        &kp_kp_l LEFT_SHIFT D  &lt 5 F   &kp G                                &kp H       &lt 5 J  &kp_kp_r LEFT_SHIFT K  &kp L        &kp BACKSPACE  &kp SEMI
 &alt_CMD      &alt_ZandNUMLOCK  &alt_X       &alt_C                 &kp V     &kp B       &kp C_MUTE    &kp GRAVE  &for_n N N  &kp M    &kp COMMA              &kp DOT      &kp LS(COMMA)  &kp MINUS
