@@ -313,7 +313,7 @@
             tap-ms = <1>;
         };
 
-        del_last_word: del_last_word {
+        del_next_word: del_last_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LS(RIGHT)) &kp BACKSPACE>;
@@ -329,7 +329,7 @@
             tap-ms = <1>;
         };
 
-        del_next_word: del_next_word {
+        del_last_word: del_next_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LS(LEFT_ARROW)) &kp BACKSPACE>;
