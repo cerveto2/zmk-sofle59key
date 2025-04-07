@@ -304,7 +304,7 @@
         del_last_word: del_last_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(LEFT_ARROW)) &kp BACKSPACE>;
+            bindings = <&kp LA(LS(RIGHT)) &kp BACKSPACE>;
             label = "DEL_LAST_WORD";
         };
 
@@ -315,6 +315,13 @@
             label = "CARKA";
             wait-ms = <1>;
             tap-ms = <1>;
+        };
+
+        del_next_word: del_next_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(LEFT_ARROW)) &kp BACKSPACE>;
+            label = "DEL_NEXT_WORD";
         };
     };
 
@@ -338,7 +345,7 @@
 &mt CAPS TAB  &kp Q             &kp W        &kp E                  &kp R     &for_t T T                           &kp Y       &kp U     &kp I                  &for_o 0 O   &kp P          &kp LBKT
 &kp LSHFT     &alt_A            &kp S        &kp_kp_l LEFT_SHIFT D  &lt 5 F   &kp G                                &kp H       &lt 5 J   &kp_kp_r LEFT_SHIFT K  &kp L        &kp BACKSPACE  &kp SEMI
 &alt_CMD      &alt_ZandNUMLOCK  &alt_X       &alt_C                 &kp V     &kp B       &kp C_MUTE    &kp GRAVE  &for_n N N  &kp M     &kp COMMA              &kp DOT      &kp LS(COMMA)  &kp MINUS
-                                &kp LA(TAB)  &kp LALT               &mo 3     &mo 2       &kp SPACE     &kp ENTER  &mo 1       &mo 5     &kp LS(SPACE)          &kp LA(TAB)
+                                &kp LA(TAB)  &kp LALT               &mo 3     &mo 2       &kp SPACE     &kp ENTER  &mo 1       &mo 6     &kp LS(SPACE)          &kp LA(TAB)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -372,7 +379,7 @@
             display-name = "adjust";
             bindings = <
 &pswd_fakt     &pswd_iz           &pswd_las     &kp DOT       &kp DOT        &kp DOT                                      &none  &none             &none         &none              &none           &none
-&kp LESS_THAN  &kp LG(LESS_THAN)  &kp HOME      &kp UP        &kp END        &kp DOT                                      &none  &kp LS(HOME)      &kp LS(UP)    &kp LS(END)        &none           &none
+&kp LESS_THAN  &kp LG(LESS_THAN)  &kp HOME      &kp UP        &kp END        &del_next_word                               &none  &kp LS(HOME)      &kp LS(UP)    &kp LS(END)        &none           &none
 &kp LG(C)      &kp LG(V)          &kp LEFT      &kp DOWN      &kp RIGHT      &del_last_word                               &none  &kp LS(LEFT)      &kp LS(DOWN)  &kp LS(RIGHT)      &del_last_word  &none
 &kp ENTER      &trans             &kp LA(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(V)       &kp SPACE    &none           &none  &kp LS(LA(LEFT))  &none         &kp LA(LS(RIGHT))  &none           &none
                                   &none         &none         &trans         &trans          &none        &kp LEFT_SHIFT  &none  &none             &none         &none
@@ -421,6 +428,21 @@
 &trans  &hacek Z  &trans    &hacek C  &trans    &trans                &trans                  &trans  &hacek N  &kp GRAVE  &kp MINUS     &kp EQUAL  &kp LBKT   &kp RBKT
                   &trans    &trans    &trans    &kp LA(LS(NUMBER_2))  &kp LS(LA(NUMBER_1))    &trans  &trans    &trans     &trans        &trans
             >;
+        };
+
+        sipky_shift {
+            display-name = "adjust";
+            bindings = <
+&pswd_fakt  &pswd_iz   &pswd_las         &kp DOT           &kp DOT            &kp DOT                                      &none  &none    &none    &none    &none           &none
+&kp DOT     &kp DOT    &kp LS(HOME)      &kp LS(UP)        &kp LS(END)        &kp DOT                                      &none  &kp DOT  &kp DOT  &kp DOT  &none           &none
+&kp LG(C)   &kp LG(V)  &kp LS(LEFT)      &kp LS(DOWN)      &kp LS(RIGHT)      &del_last_word                               &none  &kp DOT  &kp DOT  &kp DOT  &del_last_word  &none
+&kp ENTER   &trans     &kp LA(LS(LEFT))  &kp LA(LS(LEFT))  &kp LA(LS(RIGHT))  &kp LG(V)       &kp SPACE    &none           &none  &kp DOT  &kp DOT  &kp DOT  &none           &none
+                       &none             &none             &trans             &trans          &none        &kp LEFT_SHIFT  &none  &none    &none    &none
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
