@@ -33,7 +33,7 @@
 
         delete2 {
             bindings = <&kp DEL>;
-            key-positions = <45 46>;
+            key-positions = <31 32>;
         };
 
         gdoc_tab {
