@@ -28,7 +28,7 @@
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <28 29>;
+            key-positions = <29 28>;
         };
 
         delete2 {
@@ -37,13 +37,18 @@
         };
 
         gdoc_tab {
-            bindings = <&kp LA(LG(RIGHT_BRACKET))>;
-            key-positions = <39 40>;
+            bindings = <&kp LG(RIGHT_BRACKET)>;
+            key-positions = <40 41>;
         };
 
         gdoc_backtab {
-            bindings = <&kp LA(LG(RIGHT_BRACKET))>;
-            key-positions = <40 41>;
+            bindings = <&kp LG(LEFT_BRACKET)>;
+            key-positions = <40 39>;
+        };
+
+        shift_tab2 {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <27 26>;
         };
     };
 
