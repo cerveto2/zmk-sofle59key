@@ -21,11 +21,6 @@
     combos {
         compatible = "zmk,combos";
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <32 31>;
-        };
-
         tab {
             bindings = <&kp TAB>;
             key-positions = <27 28>;
@@ -36,14 +31,19 @@
             key-positions = <28 29>;
         };
 
-        delete {
-            bindings = <&kp DEL>;
-            key-positions = <34 33>;
-        };
-
         delete2 {
             bindings = <&kp DEL>;
             key-positions = <45 46>;
+        };
+
+        gdoc_tab {
+            bindings = <&kp LA(LG(RIGHT_BRACKET))>;
+            key-positions = <39 40>;
+        };
+
+        gdoc_backtab {
+            bindings = <&kp LA(LG(RIGHT_BRACKET))>;
+            key-positions = <40 41>;
         };
     };
 
@@ -420,7 +420,7 @@
             >;
         };
 
-        prazdne {
+        diakritika {
             bindings = <
 &trans  &trans    &trans    &trans    &trans    &trans                                                &trans    &trans     &trans        &trans     &trans     &trans
 &trans  &trans    &kp N0    &hacek E  &hacek R  &hacek T                                              &kp N7    &none      &kp NUMBER_9  &carka O   &trans     &trans
