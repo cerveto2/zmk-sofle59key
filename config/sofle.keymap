@@ -95,6 +95,16 @@
             bindings = <&hacek_c>;
             key-positions = <39 31>;
         };
+
+        hacek_t {
+            bindings = <&hacek T>;
+            key-positions = <31 17>;
+        };
+
+        hacek_n {
+            bindings = <&hacek N>;
+            key-positions = <28 44>;
+        };
     };
 
     behaviors {
@@ -473,7 +483,7 @@
         diakritika {
             bindings = <
 &trans  &trans    &trans    &trans    &trans    &trans                                                &trans    &trans     &trans        &trans     &trans     &trans
-&trans  &trans    &kp N0    &hacek E  &hacek R  &hacek T                                              &kp N7    &none      &kp NUMBER_9  &carka O   &trans     &trans
+&trans  &trans    &kp N0    &carka_e  &hacek R  &hacek T                                              &kp N7    &none      &kp NUMBER_9  &carka O   &trans     &trans
 &trans  &kp N8    &hacek S  &hacek D  &trans    &trans                                                &trans    &kp BSLH   &kp SEMI      &kp APOS   &kp COMMA  &kp DOT
 &trans  &hacek Z  &trans    &hacek C  &trans    &trans                &trans                  &trans  &hacek N  &kp GRAVE  &kp MINUS     &kp EQUAL  &kp LBKT   &kp RBKT
                   &trans    &trans    &trans    &kp LA(LS(NUMBER_2))  &kp LS(LA(NUMBER_1))    &trans  &trans    &trans     &trans        &trans
