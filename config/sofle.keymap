@@ -62,6 +62,51 @@
             bindings = <&kp LS(TAB)>;
             key-positions = <27 26>;
         };
+
+        carka_a {
+            bindings = <&carka_a>;
+            key-positions = <25 31>;
+        };
+
+        carka_i {
+            bindings = <&carka_i>;
+            key-positions = <28 20>;
+        };
+
+        carka_e {
+            bindings = <&carka_e>;
+            key-positions = <15 31>;
+        };
+
+        hacek_e {
+            bindings = <&hacek_e>;
+            key-positions = <15 28>;
+        };
+
+        carka_y {
+            bindings = <&carka_y>;
+            key-positions = <28 18>;
+        };
+
+        hacek_z {
+            bindings = <&hacek_z>;
+            key-positions = <31 37>;
+        };
+
+        hacek_r {
+            bindings = <&hacek_r>;
+            key-positions = <16 31>;
+        };
+
+        hacek_c {
+            bindings = <&hacek_c>;
+            key-positions = <38 31>;
+        };
+
+        hacek_s {
+            bindings = <&hacek_c>;
+            key-positions = <39 31>;
+        };
     };
 
     behaviors {
@@ -395,11 +440,11 @@
         sipky {
             display-name = "adjust";
             bindings = <
-&pswd_fakt     &pswd_iz           &pswd_las     &kp DOT       &kp DOT        &kp DOT                                      &none  &none             &none         &none              &none           &none
-&kp LESS_THAN  &kp LG(LESS_THAN)  &kp HOME      &kp UP        &kp END        &del_next_word                               &none  &kp LS(HOME)      &kp LS(UP)    &kp LS(END)        &none           &none
-&kp LG(C)      &kp LG(V)          &kp LEFT      &kp DOWN      &kp RIGHT      &del_last_word                               &none  &kp LS(LEFT)      &kp LS(DOWN)  &kp LS(RIGHT)      &del_last_word  &none
-&kp ENTER      &trans             &kp LA(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(V)       &kp SPACE    &none           &none  &kp LS(LA(LEFT))  &none         &kp LA(LS(RIGHT))  &none           &none
-                                  &none         &none         &trans         &trans          &none        &kp LEFT_SHIFT  &none  &none             &none         &none
+&pswd_fakt         &pswd_iz           &pswd_las     &kp DOT       &kp DOT        &kp DOT                                      &none  &none             &none         &none              &none           &none
+&kp LG(LESS_THAN)  &kp LG(LESS_THAN)  &kp HOME      &kp UP        &kp END        &del_next_word                               &none  &kp LS(HOME)      &kp LS(UP)    &kp LS(END)        &none           &none
+&kp LG(C)          &kp LG(V)          &kp LEFT      &kp DOWN      &kp RIGHT      &del_last_word                               &none  &kp LS(LEFT)      &kp LS(DOWN)  &kp LS(RIGHT)      &del_last_word  &none
+&kp ENTER          &trans             &kp LA(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(V)       &kp SPACE    &none           &none  &kp LS(LA(LEFT))  &none         &kp LA(LS(RIGHT))  &none           &none
+                                      &none         &none         &trans         &trans          &none        &kp LEFT_SHIFT  &none  &none             &none         &none
             >;
 
             sensor-bindings =
@@ -418,7 +463,7 @@
             display-name = "adjust";
             bindings = <
 &bt BT_CLR_ALL    &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR                  &none  &none  &none  &none  &none  &none
-&kp LG(LC(C))     &kp SPACE       &kp SPACE          &kp SPACE     &kp SPACE     &kp SPACE                   &none  &none  &none  &none  &none  &none
+&trans            &kp SPACE       &kp SPACE          &kp SPACE     &kp SPACE     &kp SPACE                   &none  &none  &none  &none  &none  &none
 &kp LG(LS(X))     &kp LS(LG(UP))  &kp SPACE          &kp SPACE     &kp SPACE     &kp SPACE                   &none  &none  &none  &none  &none  &none
 &kp LG(LS(LEFT))  &kp LG(M)       &kp LG(LS(RIGHT))  &kp SPACE     &kp SPACE     &kp SPACE   &none    &none  &none  &none  &none  &none  &none  &none
                                   &none              &none         &trans        &trans      &none    &none  &none  &none  &none  &none
