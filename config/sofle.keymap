@@ -442,7 +442,7 @@
 &kp LG(LESS_THAN)  &kp LG(LESS_THAN)  &kp HOME      &kp UP        &kp END        &del_next_word                               &none  &kp LS(HOME)      &kp LS(UP)    &kp LS(END)        &none           &none
 &kp LG(C)          &kp LG(V)          &kp LEFT      &kp DOWN      &kp RIGHT      &del_last_word                               &none  &kp LS(LEFT)      &kp LS(DOWN)  &kp LS(RIGHT)      &del_last_word  &none
 &kp ENTER          &trans             &kp LA(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(V)       &kp SPACE    &none           &none  &kp LS(LA(LEFT))  &none         &kp LA(LS(RIGHT))  &none           &none
-                                      &none         &none         &trans         &trans          &none        &kp LEFT_SHIFT  &none  &none             &none         &none
+                                      &none         &kp LG(LBKT)  &kp LG(RBKT)   &trans          &none        &kp LEFT_SHIFT  &none  &none             &none         &none
             >;
 
             sensor-bindings =
@@ -472,11 +472,11 @@
 
         numbers {
             bindings = <
-&trans  &trans  &trans      &trans      &trans      &trans                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N0)  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans      &trans      &kp N1      &kp FSLH    &kp MINUS    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans      &trans      &trans      &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp NUMBER_1  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans      &trans      &kp LS(N0)  &kp FSLH      &kp MINUS    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
