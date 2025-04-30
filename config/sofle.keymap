@@ -403,7 +403,7 @@
             bindings = <
 &gresc        &kp BSLH          &hacek_e     &hacek_s               &hacek_c  &hacek_r                             &hacek_z    &carka_y   &carka_a               &carka_i     &carka_e       &kp LS(EQUAL)
 &mt CAPS TAB  &kp Q             &kp W        &kp E                  &kp R     &for_t T T                           &kp Y       &kp U      &kp I                  &for_o 0 O   &kp P          &kp LBKT
-&kp LSHFT     &alt_A            &kp S        &kp_kp_l LEFT_SHIFT D  &lt 5 F   &kp G                                &kp H       &lt 5 J    &kp_kp_r LEFT_SHIFT K  &kp L        &kp BACKSPACE  &kp SEMI
+&kp LSHFT     &alt_A            &kp S        &kp_kp_l LEFT_SHIFT D  &lt 5 F   &kp G                                &kp H       &lt 5 J    &kp_kp_r LEFT_SHIFT K  &kp L        &kp BACKSPACE  &kp ENTER
 &alt_CMD      &alt_ZandNUMLOCK  &alt_X       &alt_C                 &kp V     &kp B       &kp C_MUTE    &kp GRAVE  &for_n N N  &kp M      &kp COMMA              &kp DOT      &kp LS(COMMA)  &kp ENTER
                                 &kp LA(TAB)  &kp LALT               &mo 3     &mo 2       &kp SPACE     &mo 5      &mo 1       &kp ENTER  &kp LS(SPACE)          &kp LA(TAB)
             >;
@@ -483,7 +483,7 @@
         diakritika {
             bindings = <
 &trans  &trans    &trans    &trans    &trans    &trans                                                &trans    &trans     &trans        &trans     &trans     &trans
-&trans  &trans    &kp N0    &carka_e  &hacek R  &hacek T                                              &kp N7    &none      &kp NUMBER_9  &carka O   &trans     &trans
+&trans  &trans    &kp N0    &carka_e  &hacek R  &hacek T                                              &kp N7    &kp SEMI   &kp NUMBER_9  &carka O   &trans     &trans
 &trans  &kp N8    &hacek S  &hacek D  &trans    &trans                                                &trans    &kp BSLH   &kp SEMI      &kp APOS   &kp COMMA  &kp DOT
 &trans  &hacek Z  &trans    &hacek C  &trans    &trans                &trans                  &trans  &hacek N  &kp GRAVE  &kp MINUS     &kp EQUAL  &kp LBKT   &kp RBKT
                   &trans    &trans    &trans    &kp LA(LS(NUMBER_2))  &kp LS(LA(NUMBER_1))    &trans  &trans    &trans     &trans        &trans
