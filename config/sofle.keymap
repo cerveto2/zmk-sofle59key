@@ -401,11 +401,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gresc        &kp BSLH          &hacek_e     &hacek_s               &hacek_c  &hacek_r                             &hacek_z    &carka_y  &carka_a               &carka_i     &carka_e       &kp LS(EQUAL)
-&mt CAPS TAB  &kp Q             &kp W        &kp E                  &kp R     &for_t T T                           &kp Y       &kp U     &kp I                  &for_o 0 O   &kp P          &kp LBKT
-&kp LSHFT     &alt_A            &kp S        &kp_kp_l LEFT_SHIFT D  &lt 5 F   &kp G                                &kp H       &lt 5 J   &kp_kp_r LEFT_SHIFT K  &kp L        &kp BACKSPACE  &kp SEMI
-&alt_CMD      &alt_ZandNUMLOCK  &alt_X       &alt_C                 &kp V     &kp B       &kp C_MUTE    &kp GRAVE  &for_n N N  &kp M     &kp COMMA              &kp DOT      &kp LS(COMMA)  &kp MINUS
-                                &kp LA(TAB)  &kp LALT               &mo 3     &mo 2       &kp SPACE     &kp ENTER  &mo 1       &mo 6     &kp LS(SPACE)          &kp LA(TAB)
+&gresc        &kp BSLH          &hacek_e     &hacek_s               &hacek_c  &hacek_r                             &hacek_z    &carka_y   &carka_a               &carka_i     &carka_e       &kp LS(EQUAL)
+&mt CAPS TAB  &kp Q             &kp W        &kp E                  &kp R     &for_t T T                           &kp Y       &kp U      &kp I                  &for_o 0 O   &kp P          &kp LBKT
+&kp LSHFT     &alt_A            &kp S        &kp_kp_l LEFT_SHIFT D  &lt 5 F   &kp G                                &kp H       &lt 5 J    &kp_kp_r LEFT_SHIFT K  &kp L        &kp BACKSPACE  &kp SEMI
+&alt_CMD      &alt_ZandNUMLOCK  &alt_X       &alt_C                 &kp V     &kp B       &kp C_MUTE    &kp GRAVE  &for_n N N  &kp M      &kp COMMA              &kp DOT      &kp LS(COMMA)  &kp MINUS
+                                &kp LA(TAB)  &kp LALT               &mo 3     &mo 2       &kp SPACE     &mo 5      &mo 1       &kp ENTER  &kp LS(SPACE)          &kp LA(TAB)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
