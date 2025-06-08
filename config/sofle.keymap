@@ -416,7 +416,7 @@
 &gresc        &kp BSLH          &hacek_e     &hacek_s               &hacek_c  &hacek_r                               &hacek_z    &carka_y   &carka_a               &carka_i     &carka_e       &kp LS(EQUAL)
 &mt CAPS TAB  &kp Q             &kp W        &kp E                  &kp R     &for_t T T                             &kp Y       &kp U      &kp I                  &for_o 0 O   &kp P          &kp LBKT
 &kp LSHFT     &alt_A            &kp S        &kp_kp_l LEFT_SHIFT D  &lt 6 F   &kp G                                  &kp H       &lt 6 J    &kp_kp_r LEFT_SHIFT K  &kp L        &kp BACKSPACE  &kp SEMI
-&alt_CMD      &alt_ZandNUMLOCK  &alt_X       &alt_C                 &kp V     &kp B       &kp C_MUTE    &kp GRAVE    &for_n N N  &kp M      &kp COMMA              &kp DOT      &kp LS(COMMA)  &kp ENTER
+&alt_CMD      &alt_ZandNUMLOCK  &alt_X       &alt_C                 &kp V     &kp B       &kp C_MUTE    &kp GRAVE    &for_n N N  &kp M      &kp COMMA              &kp DOT      &kp LS(COMMA)  &kp DELETE
                                 &kp LA(TAB)  &kp LALT               &mo 4     &mo 2       &kp SPACE     &lt 6 ENTER  &mo 1       &kp ENTER  &kp LS(SPACE)          &kp LA(TAB)
             >;
 
