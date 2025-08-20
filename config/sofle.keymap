@@ -403,7 +403,7 @@
             bindings = <
 &gresc        &kp BSLH          &hacek_e     &hacek_s               &hacek_c  &hacek_r                               &hacek_z    &carka_y   &carka_a               &carka_i     &carka_e       &kp LS(EQUAL)
 &mt CAPS TAB  &kp Q             &kp W        &kp E                  &kp R     &for_t T T                             &kp Y       &kp U      &kp I                  &for_o 0 O   &kp P          &kp LBKT
-&kp LSHFT     &alt_A            &kp S        &kp_kp_l LEFT_SHIFT D  &lt 6 F   &kp G                                  &kp H       &lt 6 J    &kp_kp_r LEFT_SHIFT K  &kp L        &kp BACKSPACE  &kp SEMI
+&kp LSHFT     &alt_A            &kp S        &kp_kp_l LEFT_SHIFT D  &lt 6 F   &kp G                                  &kp H       &kp J      &kp_kp_r LEFT_SHIFT K  &kp L        &kp BACKSPACE  &kp SEMI
 &alt_CMD      &alt_ZandNUMLOCK  &alt_X       &alt_C                 &kp V     &kp B       &kp C_MUTE    &kp GRAVE    &for_n N N  &kp M      &kp COMMA              &kp DOT      &kp LS(COMMA)  &kp DELETE
                                 &kp LA(TAB)  &kp LALT               &mo 4     &mo 2       &kp SPACE     &lt 6 ENTER  &mo 1       &kp ENTER  &kp LS(SPACE)          &kp LA(TAB)
             >;
@@ -426,7 +426,7 @@
 &kp F1      &kp F2        &kp F3        &kp F4         &kp F5      &kp F6                                       &kp F7          &kp F8         &kp F9       &kp F10       &kp F11       &kp F12
 &caps_word  &kp DOT       &kp LS(LBKT)  &kp LS(GRAVE)  &kp GRAVE   &kp LG(LESS_THAN)                            &kp LS(SEMI)    &kp LA(COMMA)  &kp LA(DOT)  &kp PERIOD    &kp PERIOD    &none
 &kp CAPS    &kp LA(APOS)  &kp LA(N2)    &kp LA(N3)     &kp LA(N4)  &kp LS(BACKSLASH)                            &kp LS(PERIOD)  &kp LS(RBKT)   &kp RBKT     &kp LA(LBKT)  &kp LA(RBKT)  &kp LA(SEMI)
-&kp ENTER   &kp LA(N6)    &kp LA(N7)    &kp LA(N8)     &kp FSLH    &kp LS(APOS)       &none            &kp DOT  &kp LS(FSLH)    &kp LA(N9)     &kp LA(N0)   &none         &kp DEL       &none
+&kp ENTER   &kp LA(N6)    &kp LA(N7)    &kp LA(N8)     &kp FSLH    &kp LS(APOS)       &none            &kp DOT  &kp LS(FSLH)    &kp LA(N9)     &kp LA(N0)   &none         &kp DEL       &kp LS(MINUS)
                           &none         &none          &none       &none              &kp LA(SLASH)    &none    &none           &none          &none        &none
             >;
 
