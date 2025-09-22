@@ -73,11 +73,6 @@
             key-positions = <28 20>;
         };
 
-        carka_e {
-            bindings = <&carka_e>;
-            key-positions = <15 31>;
-        };
-
         hacek_e {
             bindings = <&hacek_e>;
             key-positions = <15 28>;
@@ -95,7 +90,7 @@
 
         hacek_r {
             bindings = <&hacek_r>;
-            key-positions = <16 31>;
+            key-positions = <16 15>;
         };
 
         hacek_c {
