@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 
-
+/*
 // Encoders
 
 &sensors { triggers-per-rotation = <30>; };
@@ -19,6 +19,7 @@
 &left_encoder { steps = <60>; };
 
 &right_encoder { steps = <60>; };
+*/
 
 #define BASE 0
 #define LOWER 1
