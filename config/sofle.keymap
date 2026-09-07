@@ -87,8 +87,8 @@
 
         hacek_r {
             bindings = <&hacek_r>;
-            key-positions = <>;
-        };
+            key-positions = <31 16>;
+            };
 
         hacek_c {
             bindings = <&hacek_c>;
