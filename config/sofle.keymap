@@ -30,21 +30,6 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <27 28>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <29 28>;
-        };
-
-        delete2 {
-            bindings = <&kp DEL>;
-            key-positions = <31 32>;
-        };
-
         gdoc_tab {
             bindings = <&kp LG(RIGHT_BRACKET)>;
             key-positions = <40 41>;
@@ -88,7 +73,7 @@
         hacek_r {
             bindings = <&hacek_r>;
             key-positions = <31 16>;
-            };
+        };
 
         hacek_c {
             bindings = <&hacek_c>;
@@ -409,7 +394,7 @@
 &kp TAB    &kp Q             &kp W        &kp E                  &kp R     &for_t T T                               &kp Y       &kp U      &kp I                  &for_o 0 O        &kp P          &kp LBKT
 &kp LSHFT  &alt_A            &kp S        &kp_kp_l LEFT_SHIFT D  &lt 6 F   &kp G                                    &kp H       &kp J      &kp_kp_r LEFT_SHIFT K  &kp L             &kp BACKSPACE  &kp SEMI
 &alt_CMD   &alt_ZandNUMLOCK  &alt_X       &alt_C                 &kp V     &kp B       &kp C_MUTE    &kp LS(EQUAL)  &for_n N N  &kp M      &kp COMMA              &kp DOT           &kp LS(COMMA)  &kp DELETE
-                             &kp LA(TAB)  &kp LALT               &mo 4     &mo 2       &kp SPACE     &lt 6 ENTER    &mo 1       &kp ENTER  &kp LS(SPACE)          &kp LEFT_CONTROL
+                             &kp LA(TAB)  &kp LALT               &mo 7     &mo 2       &kp SPACE     &lt 6 ENTER    &mo 1       &kp ENTER  &kp LS(SPACE)          &kp LEFT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -479,11 +464,11 @@
 
             display-name = "adjust";
             bindings = <
-&bt BT_CLR_ALL    &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR                  &none  &none  &none  &none  &none  &none
-&trans            &kp SPACE       &kp SPACE          &kp SPACE     &kp SPACE     &kp SPACE                   &none  &none  &none  &none  &none  &none
-&kp LG(LS(X))     &kp LS(LG(UP))  &kp SPACE          &kp SPACE     &kp SPACE     &kp SPACE                   &none  &none  &none  &none  &none  &none
-&kp LG(LS(LEFT))  &kp LG(M)       &kp LG(LS(RIGHT))  &kp SPACE     &kp LCTRL     &kp SPACE   &none    &none  &none  &none  &none  &none  &none  &none
-                                  &none              &none         &trans        &trans      &none    &none  &none  &none  &none  &none
+&bt BT_CLR_ALL    &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_CLR                  &none  &none  &none  &none  &none  &none
+&trans            &kp SPACE       &kp SPACE          &kp SPACE     &kp SPACE      &kp SPACE                   &none  &none  &none  &none  &none  &none
+&kp LG(LS(X))     &kp LS(LG(UP))  &kp SPACE          &kp SPACE     &kp SPACE      &kp SPACE                   &none  &none  &none  &none  &none  &none
+&kp LG(LS(LEFT))  &kp LG(M)       &kp LG(LS(RIGHT))  &kp SPACE     &kp LC(LG(A))  &kp SPACE   &none    &none  &none  &none  &none  &none  &none  &none
+                                  &none              &none         &trans         &trans      &none    &none  &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -506,6 +491,16 @@
 &trans  &kp N8    &hacek S  &hacek D  &trans    &trans                                         &trans    &kp BSLH   &kp SEMI      &kp APOS   &kp COMMA  &kp DOT
 &trans  &hacek Z  &trans    &hacek C  &trans    &trans                &trans           &trans  &hacek N  &kp GRAVE  &kp MINUS     &kp EQUAL  &kp LBKT   &kp RBKT
                   &trans    &trans    &trans    &kp LA(LS(NUMBER_2))  &kp LA(SLASH)    &trans  &trans    &trans     &trans        &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans         &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LC(LG(A))  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans         &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
