@@ -499,7 +499,7 @@
 &trans  &trans  &trans  &trans  &trans         &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans         &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans         &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp X   &kp LC(LG(A))  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp X   &kp LC(RG(A))  &none   &none     &none   &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &none          &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
