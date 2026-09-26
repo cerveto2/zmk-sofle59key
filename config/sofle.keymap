@@ -394,7 +394,7 @@
 &kp TAB    &kp Q             &kp W        &kp E                  &kp R          &for_t T T                               &kp Y       &kp U      &kp I                  &for_o 0 O        &kp P          &kp LBKT
 &kp LSHFT  &alt_A            &kp S        &kp_kp_l LEFT_SHIFT D  &lt 6 F        &kp G                                    &kp H       &kp J      &kp_kp_r LEFT_SHIFT K  &kp L             &kp BACKSPACE  &kp SEMI
 &alt_CMD   &alt_ZandNUMLOCK  &alt_X       &alt_C                 &kp V          &kp B       &kp C_MUTE    &kp LS(EQUAL)  &for_n N N  &kp M      &kp COMMA              &kp DOT           &kp LS(COMMA)  &kp DELETE
-                             &kp LA(TAB)  &kp LALT               &kp RG(LC(A))  &mo 2       &kp SPACE     &lt 6 ENTER    &mo 1       &kp ENTER  &kp LS(SPACE)          &kp LEFT_CONTROL
+                             &kp LA(TAB)  &kp LALT               &kp RG(LC(A))  &mo 2       &kp SPACE     &lt 6 ENTER    &mo 1       &kp ENTER  &mo 7                  &kp LEFT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -491,6 +491,16 @@
 &trans  &kp N8    &hacek S  &hacek D  &trans    &trans                                         &trans    &kp BSLH   &kp SEMI      &kp APOS   &kp COMMA  &kp DOT
 &trans  &hacek Z  &trans    &hacek C  &trans    &trans                &trans           &trans  &hacek N  &kp GRAVE  &kp MINUS     &kp EQUAL  &kp LBKT   &kp RBKT
                   &trans    &trans    &trans    &kp LA(LS(NUMBER_2))  &kp LA(SLASH)    &trans  &trans    &trans     &trans        &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
